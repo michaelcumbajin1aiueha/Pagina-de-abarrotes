@@ -1,0 +1,358 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: #aac1ff;
+}
+header{
+	width: 100%;
+}
+
+.navegacion{
+	width: 1000px;
+	margin: 10px auto;
+	background: #4d4d4d;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #ffffff;
+	font-family: 'verdana';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #000f96;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 100%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: rgb(255, 255, 255);
+	font-family: 'Verdana';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+.redes h2{
+    font-family: gabriola;
+    text-align: center;
+    font-weight: bold ;
+
+}
+.sociales{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.sociales li{
+    display: inline-block;
+}
+.sociales a{
+    padding: 10px;
+}
+/* galeriaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.galeria{
+    font-family: 'Vernada';
+}
+
+.galeria h1{
+    text-align: center;
+    margin:20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea{
+    border-top: 5px solid #0077C0;
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgba(0, 118, 192, 0.781) ;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay h2{
+    color: #fff;
+    font-weight: 300;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .contenedor-imagenes{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:700px){
+    .contenedor-imagenes{
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px){
+    h1{
+        font-size:22px;
+    }
+    .contenedor-imagenes{
+        width: 98%;
+    }
+    .contenedor-imagenes .imagen{
+        width: 80%;
+    }
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tienda1{
+    font-family: 'verdana';
+}
+
+.tienda1 img{
+    position: absolute;
+    top: 00px;
+    left: 10px;
+    margin-bottom: 200px;
+    height: 220px;
+    width: 320px;
+    top: 230px;   /* con este ajustas el alto o bajo de la imagen */
+    left: 850px; /* con este si más a la derecha o a la izquierda */
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px  #4d4d4d;
+}
+.cyber{
+    font-family: 'verdana';
+}
+
+.cyber img{
+    position: absolute;
+    top: 00px;
+    left: 10px;
+    margin-bottom: 200px;
+    height: 220px;
+    width: 320px;
+    top: 520px;   /* con este ajustas el alto o bajo de la imagen */
+    left: 850px; /* con este si más a la derecha o a la izquierda */
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px  #4d4d4d;
+}
+.libreria{
+    font-family: 'verdana';
+}
+
+.libreria img{
+    position: absolute;
+    top: 00px;
+    left: 10px;
+    margin-bottom: 200px;
+    height: 220px;
+    width: 320px;
+    top: 820px;   /* con este ajustas el alto o bajo de la imagen */
+    left: 850px; /* con este si más a la derecha o a la izquierda */
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px #4d4d4d;
+}
+/* CUADRO 1 */
+.testbox{
+    position: absolute;
+    background-color: #4d4d4d;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    margin: 140px;
+    width: 350px;
+    height: 380px;
+    top: 110px;   /* con este ajustas el alto o bajo de la imagen */
+    left: 72px; /* con este si más a la derecha o a la izquierda */
+}
+#texto{
+    font: bold 30px verdana;
+    width: 100%;
+}
+
+
+.testbox2{
+    position: absolute;
+    background-color: #4d4d4d;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    margin: 0px ;
+    width: 350px;
+    height: 380px;
+    top: 250px;   /* con este ajustas el alto o bajo de la imagen */
+    left: 862px; /* con este si más a la derecha o a la izquierda */
+    }
+#texto2{
+    font: bold 30px verdana;
+    width: 100%;
+}
+
+
+.tiendasi{
+    position: absolute;
+    background-color: rgb(28, 171, 214);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    margin: 140px;
+    width: 590px; /* ancho del cuadro*/
+    height: 260px;
+    top: 75px;   /* con este ajustas el alto o bajo de la imagen */
+    left: 72px; /* con este si más a la derecha o a la izquierda */
+}
+#tiendasi{
+    font: bold 30px Verdana;
+    width: 100%;
+}
+.cybersi{
+    position: absolute;
+    background-color: rgb(28, 171, 214);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    margin: 140px;
+    width: 590px; /* ancho del cuadro*/
+    height: 240px;
+    top: 375px;   /* con este ajustas el alto o bajo de la imagen */
+    left: 72px; /* con este si más a la derecha o a la izquierda */
+}
+#cybersi{
+    font: bold 30px Verdana;
+    width: 100%;
+}
+
+.libreriasi{
+    position: absolute;
+    background-color: rgb(28, 171, 214);
+    border: 2px solid rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    margin: 140px;
+    width: 590px; /* ancho del cuadro*/
+    height: 200px;
+    top: 695px;   /* con este ajustas el alto o bajo de la imagen */
+    left: 72px; /* con este si más a la derecha o a la izquierda */
+}
+#libreriasi{
+    font: bold 30px Verdana;
+    width: 100%;
+}
+
+.tienda123 img{
+    position: absolute;
+    top: 00px;
+    left: 10px;
+    margin-bottom: 200px;
+    height: 300px;
+    width: 440px;
+    top: 700px;   /* con este ajustas el alto o bajo de la imagen */
+    left: 490px; /* con este si más a la derecha o a la izquierda */
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px #4d4d4d;
+}
+
+.DOMICILIO{
+    position: absolute;
+    border: 2px solid #333333;
+    padding: 15px;
+    text-align: center;
+    margin: 140px;
+    width: 365px; /* ancho del cuadro*/
+    height: 330px;
+    top: 150px;   /* con este ajustas el alto o bajo de la imagen */
+    left: 142px; /* con este si más a la derecha o a la izquierda */
+}
+.maniqui img{
+    position: absolute;
+    top: 00px;
+    left: 10px;
+    margin-bottom: 200px;
+    height: 300px;
+    width: 280px;
+    top: 300px;   /* con este ajustas el alto o bajo de la imagen */
+    left: 830px; /* con este si más a la derecha o a la izquierda */
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px #4d4d4d;
+}
